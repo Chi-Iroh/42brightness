@@ -1,5 +1,5 @@
 42brightness
-Script to manage screen brightness
+Utility to manage screen brightness
 Options :
 42brightness -h / --help : displays this text
 42brightness <N> : (in/de)creases brightness of <N> percents

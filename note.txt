@@ -1,0 +1,2 @@
+brightness_set.cpp :
+    - warning variable text should be constructed with std::format, but for now dnf only allows me to download GCC 12 (std::format comes with GCC 13)

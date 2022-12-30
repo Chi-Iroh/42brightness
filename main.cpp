@@ -85,7 +85,7 @@ using namespace std::string_literals;
 {
     const long long value{ get_current_value() };
 
-    std::cout << value << ' ' << get_percentage(value) << std::endl;
+    std::cout << value << ' ' << get_percentage(value) << ' ' << get_max_value() << std::endl;
     std::exit(0);
 }
 

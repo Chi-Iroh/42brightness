@@ -2,42 +2,15 @@
 #include <string>
 #include <cstdlib>
 #include <iostream>
-#include "colors.hpp"
-
-static void display_name()
-{
-    using namespace std::string_literals;
-
-    static constexpr std::array colors {
-        color::blue,
-        color::cyan,
-        color::dark::gray,
-        color::green,
-        color::light::blue,
-        color::light::gray,
-        color::light::green,
-        color::light::red,
-        color::orange,
-        color::purple,
-        color::red,
-        color::white,
-        color::yellow
-    };
-
-    for (long long i = 0; char c : "42brightness") {
-        std::string char_cmd = "\033[" + std::string(colors[i++]) + "m" + c;
-        std::cout <<  std::string(char_cmd);
-    }
-    std::cout << std::string(color::none) << std::endl;
-}
 
 [[noreturn]] void help()
 {
-    display_name();
+    std::cout << "42brightness" << std::endl;
     std::cout << "Script to manage screen brightness" << std::endl;
     std::cout << "Options :" << std::endl;
     std::cout << "42brightness : displays current brightness" << std::endl;
-    std::cout << "42brightness --format : displays current brightness (<value> <percentage>), so that it's easier to be used by another program" << std::endl;
+    std::cout << "42brightness --format : displays current brightness (<value> <percentage> <max value>),";
+    std::cout << " so that it's easier to be used by another program" << std::endl;
     std::cout << "42brightness -h / --help : displays this text" << std::endl;
     std::cout << "42brightness <N> : (in/de)creases brightness of <N> percents" << std::endl;
     std::cout << "42brightness --value <N> : (in/de)creases brightness of <N>" << std::endl;

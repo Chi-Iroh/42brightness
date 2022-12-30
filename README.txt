@@ -1,6 +1,8 @@
 42brightness
-Utility to manage screen brightness
+Script to manage screen brightness
 Options :
+42brightness : displays current brightness
+42brightness --format : displays current brightness (<value> <percentage> <max value>), so that it's easier to be used by another program
 42brightness -h / --help : displays this text
 42brightness <N> : (in/de)creases brightness of <N> percents
 42brightness --value <N> : (in/de)creases brightness of <N>

@@ -81,6 +81,14 @@ using namespace std::string_literals;
     std::exit(0);
 }
 
+[[noreturn]] void display_brightness_format()
+{
+    const long long value{ get_current_value() };
+
+    std::cout << value << ' ' << get_percentage(value) << std::endl;
+    std::exit(0);
+}
+
 int main(int argc, char *argv[]) {
     if (argc == 1) {
         display_brightness();
@@ -89,6 +97,8 @@ int main(int argc, char *argv[]) {
             help();
         } else if (argv[1] == "--max"s) {
             set_max_argv();
+        } else if (argv[1] == "--format"s) {
+            display_brightness_format();
         }
         increase_percent_argv(argv[1]);
     } else if (argc == 3) {

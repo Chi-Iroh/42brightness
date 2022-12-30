@@ -36,6 +36,8 @@ static void display_name()
     display_name();
     std::cout << "Script to manage screen brightness" << std::endl;
     std::cout << "Options :" << std::endl;
+    std::cout << "42brightness : displays current brightness" << std::endl;
+    std::cout << "42brightness --format : displays current brightness (<value> <percentage>), so that it's easier to be used by another program" << std::endl;
     std::cout << "42brightness -h / --help : displays this text" << std::endl;
     std::cout << "42brightness <N> : (in/de)creases brightness of <N> percents" << std::endl;
     std::cout << "42brightness --value <N> : (in/de)creases brightness of <N>" << std::endl;

@@ -15,3 +15,7 @@ Returns codes :
 	- 21 : operation aborted (when low brightness asked and user is warned and cancels)
 	- 42 : bad argument(s)
 	- 84 : cannot open system files (program must run as root)
+
+IMPORTANT NOTE :
+
+For now, it works only for computers with some Intel hardware (because of the directory I open have a different name otherwise), it'll be fixed later.
